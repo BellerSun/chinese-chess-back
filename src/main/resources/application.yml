@@ -1,0 +1,15 @@
+spring:
+  mvc:
+    static-path-pattern: /**
+  datasource:
+    url: jdbc:mysql://cdb-b1ppo2ee.bj.tencentcdb.com:10133/db_temp
+    password: temp_pwd
+    username: temp
+    hikari:
+      max-lifetime: 30000
+      connection-test-query: SELECT 1
+      maximum-pool-size: 2
+server:
+  port: 8888
+mybatis:
+  type-aliases-package: cn.sunyc.chinesechess.domain.**
